@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Ular</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <h1>GAME OVER</h1>
+    <div class="container-flappy">
+        <div class="score">
+            <h1 id="scr">0</h1>
+        </div>
+        <div class="title">
+            <h1>FLAPPY BIRD BY MR.IDN24</h1>
+            <div class="nav-menu">
+                <ul>
+                    <li>MENU</li>
+                    <li id="start">START</li>
+                    <li>EXIT</li>
+                    <small>v 0.1</small>
+                </ul>
+            </div>
+        </div>
+        <div class="bird" id="bird"></div>
+        <div class="container-wall">
+            <div class="wall-top" id="wall-top"></div>
+            <div class="wall-bot" id="wall-bot"></div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container d-none">
+        <span class="block" id="block"></span>
+    </div>
+    <div class="alert">
+        <span class="body-alert"><i class="fas fa-exclamation-triangle pr-1"></i>STOP!</span>
+        <br><br>
+        <button class="btn btn-light">Oke</button>
+    </div> -->
+    <script src="engine.js"></script>
+</body>
+
+</html>
