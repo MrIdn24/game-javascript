@@ -66,36 +66,36 @@ start.addEventListener('click', (e) => {
             }
         });
 
-        setInterval(function () {
-            idWall += 1;
-            a += Math.floor(Math.random() * 100) + 10;
-            b -= Math.floor(Math.random() * 100) + 30;
-            c += Math.floor(Math.random() * 100) + 190;
-            cw.innerHTML += '<div class = "wall-top" id = "wall-top' + idWall + '">';
-            cw.innerHTML += '<div class = "wall-bot" id = "wall-bot' + idWall + '">';
-            document.getElementById('wall-top' + idWall).style.left = c + 'px';
-            document.getElementById('wall-bot' + idWall).style.left = c + 'px';
-            document.getElementById('wall-top' + idWall).style.top = a + 'px';
-            document.getElementById('wall-bot' + idWall).style.top = b + 'px';
-        }, 3000);
+        // setInterval(function () {
+        //     idWall += 1;
+        //     a += Math.floor(Math.random() * 100) + 10;
+        //     b -= Math.floor(Math.random() * 100) + 30;
+        //     c += Math.floor(Math.random() * 100) + 190;
+        //     cw.innerHTML += '<div class = "wall-top" id = "wall-top' + idWall + '">';
+        //     cw.innerHTML += '<div class = "wall-bot" id = "wall-bot' + idWall + '">';
+        //     document.getElementById('wall-top' + idWall).style.left = c + 'px';
+        //     document.getElementById('wall-bot' + idWall).style.left = c + 'px';
+        //     document.getElementById('wall-top' + idWall).style.top = a + 'px';
+        //     document.getElementById('wall-bot' + idWall).style.top = b + 'px';
+        // }, 3000);
 
-        setInterval(function () {
-            // let sl = wt.style.left.substring(0, 3);
-            // let st = lr.substring(0, 3);
-            if (wall <= 360 && lr <= 150) {
-                if (wall >= 290) {
-                    // wall = wall;
-                    // lr = lr;
-                    bird.style.top = lr + 'px';
-                    wt.style.left = wall + 'px';
-                    wb.style.left = wall + 'px';
-                    over.style.display = 'block';
-                    cf.style.filter = 'brightness(70%)';
-                }
-            } else {
-                // console.log('false')
-            }
-        }, 100);
+        // setInterval(function () {
+        //     // let sl = wt.style.left.substring(0, 3);
+        //     // let st = lr.substring(0, 3);
+        //     if (wall <= 360 && lr <= 150) {
+        //         if (wall >= 290) {
+        //             // wall = wall;
+        //             // lr = lr;
+        //             bird.style.top = lr + 'px';
+        //             wt.style.left = wall + 'px';
+        //             wb.style.left = wall + 'px';
+        //             over.style.display = 'block';
+        //             cf.style.filter = 'brightness(70%)';
+        //         }
+        //     } else {
+        //         // console.log('false')
+        //     }
+        // }, 100);
     }
 });
 over.addEventListener('click', (e) => {
